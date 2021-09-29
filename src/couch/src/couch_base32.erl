@@ -114,7 +114,7 @@ decode(Encoded, ByteOffset, Acc) ->
                 | Acc
             ];
         <<A:1/binary, B:1/binary, C:1/binary, D:1/binary, E:1/binary, F:1/binary, G:1/binary, "=">> ->
-            [
+            [   dff
                 <<
                     (find_in_set(A)):5,
                     (find_in_set(B)):5,
